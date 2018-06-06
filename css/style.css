@@ -21,6 +21,12 @@ header img {
   height: 44px;
 }
 
+.left {
+  width: 100%;
+  float: left;
+  display: inline-flex;
+}
+
 header .sbox {
   display: flex;
   margin-left: 20px;
@@ -63,6 +69,96 @@ input[type="text"] {
   background-repeat: no-repeat;
   background-size: 23px;
   margin-top: 10px;
+}
+
+.navbar {
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  margin-top: 10px;
+  float: right;
+  margin-right: -4%;
+}
+
+.navbar div {
+  /* clear: both; */
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.navbar a {
+  display: inline-block;
+  padding-right: 15px;
+  color: black;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.notification {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/bell.png");
+  background-size: 30px;
+  margin-right: 10px;
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.notification:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.appgrid {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.appgrid::after {
+  content: "";
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../images/apps.png");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.appgrid:hover {
+  background-image: url("../images/apps.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.user {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  background-color: rgb(174, 79, 197);
+  border-radius: 100%;
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
+  line-height: 36px;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 30px;
 }
 
 .searchtypes {
@@ -686,7 +782,7 @@ display: inline-flex;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 13px;
-  /* margin-left: 164px; */
+  height: 15px;
   border-top: 1px solid lightgrey;
 }
 
